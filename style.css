@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background: #fff;
+}
+
+.carousel-inner img {
+    width: auto;
+    height: 100vh;
+    object-fit: cover;
+    /* position: absolute; */
+}
+
+
+
+.navbar-scrolled {
+    background-color: #212529 !important;
+}
+
+.dark {
+    background: #212529;
+    color: rgb(206, 119, 145);
+    transition: all 0.5s;
+}
+
+:root {
+    --bg-red: #db1f32;
+    --text-red: #db1f32;
+    --bg-gray: #212529;
+}
+
+.bg-red {
+    background: var(--bg-red);
+}
+
+.text-red {
+    color: var(--text-red);
+}
+
+.bg-gray {
+    background: var(--bg-gray);
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    text-align: left;
+}
+
+.sort {
+    padding: 10px 10px;
+    background: #ffffff;
+    border: 1px solid #212529;
+    border-radius: 30px;
+    text-align: center;
+}
+
+select {
+    border: none;
+    outline: none;
+}
+
+.card {
+    border: none;
+}
+
+.owl-carousel.owl-drag .owl-item {
+    display: flex;
+    justify-content: center;
+    object-fit: none
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 180px;
+}
+
+.Customcard {
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 3px 8px 0 rgb(245, 245, 245), 0 2px 20px 0 rgba(166, 166, 166, 0.03);
+
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: var(--text-red);
+}
+
+/* @media only screen and (max-width:768px) and (max-width:991px) {
+    .carousel-caption {
+        bottom: 370px;
+    }
+
+    .carousel-caption p {
+        width: 100%;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+
+    .img-area img {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width:767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .carousel-caption {
+        bottom: 125px;
+
+    }
+
+    .carousel-caption h5 {
+        font-size: 17px;
+    }
+
+    .carousel-caption a {
+        padding: 10px 15px;
+    }
+
+    .carousel-caption p {
+        width: 100%;
+        line-height: 1.6;
+        font-size: 20px;
+    }
+
+    .about-text {
+        padding-top: 50px;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+} */
+@media (max-width: 600px) {
+
+    .carousel-caption {
+        position: absolute;
+        top: 15rem;
+        left: 15%;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        text-align: left;
+    }
+
+    .custom-owl-card {
+        text-align: center;
+    }
+
+    .owl-carousel .owl-item img {
+        margin-left: 2rem;
+    }
+
+    .card-img-overlay {
+        h5 {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    .card-img-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: var(--bs-card-img-overlay-padding);
+        border-radius: var(--bs-card-inner-border-radius);
+
+    }
+
+
+}

@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Unplugged-Cam</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="icon" type="images/x-icon" href="images/Logoo.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg bg-transparent navbar-dark fixed-top" id="navbar">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="images/logoW.png" alt=""
+                            style="width: 60px;"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-light rounded-5 ms-3 mb-1 order-md-last" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-user fa-lg" style="color: #212529;"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cameralenses.html">Camera Lenses</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Warranty Registration
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="glossary.html">Glossary</a></li>
+                                    <li><a class="dropdown-item" href="#">Resource Gallery</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Quick Facts</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact-us.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel"><a href="index.html"><img
+                                    src="images/logoW.png" alt="" style="width: 100px;"></a></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="container">
+                                <div class="row">
+                                    <h4 class="fw-bold text-center display-6">My Account</h4>
+                                    <div class="col-lg-6 col-md-12 my-5">
+                                        <h4 class="fw-bold ">Login</h4>
+
+                                        <form class=" rounded-3  ">
+                                            <div class="form-floating mb-3 ">
+                                                <label for="floatingInput" class="text-dark">Email
+                                                    address</label><br><br>
+                                                <input type="email" class="form-control" id="floatingInput"
+                                                    placeholder="name@example.com" required>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <label for="floatingPassword" class="text-dark">Password</label><br><br>
+                                                <input type="password" class="form-control" id="floatingPassword"
+                                                    placeholder="Password">
+                                            </div>
+                                            <div class=" checkbox mb-3 text-dark">
+                                                <label>
+                                                    <input type="checkbox" value="remember-me"> Remember me
+                                                </label>
+                                            </div>
+                                            <button class="w-100 btn btn-lg btn-danger" type="submit">Continue</button>
+                                        </form>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 my-5">
+                                        <h4 class="fw-bold">Register</h4>
+
+                                        <form class=" rounded-3  ">
+                                            <div class="form-floating mb-3">
+                                                <label for="validationDefault01" class="form-label">First
+                                                    name</label><br><br>
+                                                <input type="text" class="form-control" id="validationDefault01"
+                                                    required>
+                                            </div>
+                                            <div class="form-floating mb-3 ">
+                                                <label for="floatingInput" class="text-dark">Email
+                                                    address</label><br><br>
+                                                <input type="email" class="form-control" id="floatingInput"
+                                                    placeholder="name@example.com" required>
+
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <label for="phone">Mobile Number</label><br><br>
+                                                <input type="tel" class="form-control" id="phone" name="phone"
+                                                    placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                                                    required>
+                                            </div>
+                                            <p>Your personal data will be used to support your experience throughout
+                                                this website, to manage access to your account,
+                                                and for other purposes described in our <a href="#">privacy policy</a>.
+                                            </p>
+                                            <button class="w-100 btn btn-lg btn-danger" type="submit">Register With
+                                                Password</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="images/thumbnail1.3.webp" class="d-block w-100 " alt="...">
+                            <div class="carousel-caption ">
+                                <h5 class="fw-semibold display-4">Lights, Camera,<br> Moments!</h5>
+
+                                <button type="button" class="btn  btn-danger rounded-4">View More</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="images/thumbnail1.2.webp" class="d-block w-100 " alt="...">
+                            <div class="carousel-caption ">
+                                <h5 class="fw-semibold display-4">Live in the Moment,<br> and let us handle the memories
+                                </h5>
+                                <button type="button" class="btn  btn-danger rounded-4">View More</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="images/thumbnail1.1.webp" class="d-block w-100 " alt="...">
+                            <div class="carousel-caption ">
+                                <h5 class="fw-semibold display-4">Move the World <br>with Images</h5>
+                                <button type="button" class="btn  btn-danger rounded-4">View More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-white my-5">
+            <div class="container">
+                <div class="row my-5 g-3 ">
+                    <div class="col-6 col-md-6 col-lg-3 py-md-0 ">
+                        <div class="item ">
+                            <div class="card Customcard">
+
+                                <img src="images/four.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-regular fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <p class="card-text text-primary mb-3">Sony Alpha a6700 Mirrorless Camera with E
+                                        18-135mm
+                                        f/3.5-5.6
+                                        OSS Lens</p>
+                                    <p>$ 1,798.00</p>
+                                    <p>NEW ARRIVAL</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <div class="item ">
+                            <div class="card Customcard">
+                                <img src="images/six.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <p class="card-text text-primary">Sony Alpha a6700 Mirrorless Camera with E 18-135mm
+                                        f/3.5-5.6
+                                        OSS Lens</p>
+                                    <p>$ 1,798.00</p>
+                                    <p>NEW ARRIVAL</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <div class="item">
+                            <div class="card Customcard">
+                                <img src="images/eight.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-regular fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-regular fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <p class="card-text text-primary">Sony Alpha a6700 Mirrorless Camera with E 18-135mm
+                                        f/3.5-5.6
+                                        OSS Lens</p>
+                                    <p>$ 1,798.00</p>
+                                    <p>NEW ARRIVAL</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <div class="item">
+                            <div class="card Customcard">
+                                <img src="images/ten.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <p class="card-text text-primary">Sony Alpha a6700 Mirrorless Camera with E 18-135mm
+                                        f/3.5-5.6
+                                        OSS Lens</p>
+                                    <p>$ 1,798.00</p>
+                                    <p>NEW ARRIVAL</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <div class="item">
+                            <div class="card Customcard">
+                                <img src="images/twelve.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-regular fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <p class="card-text text-primary">Sony Alpha a6700 Mirrorless Camera with E 18-135mm
+                                        f/3.5-5.6
+                                        OSS Lens</p>
+                                    <p>$ 1,798.00</p>
+                                    <p>NEW ARRIVAL</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <div class="item ">
+                            <div class="card Customcard">
+                                <img src="images/fourteen.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-regular fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-regular fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-regular fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <p class="card-text text-primary">Sony Alpha a6700 Mirrorless Camera with E 18-135mm
+                                        f/3.5-5.6
+                                        OSS Lens</p>
+                                    <p>$ 1,798.00</p>
+                                    <p>NEW ARRIVAL</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <div class="item">
+                            <div class="card Customcard">
+                                <img src="images/sixteen.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <p class="card-text text-primary">Sony Alpha a6700 Mirrorless Camera with E 18-135mm
+                                        f/3.5-5.6
+                                        OSS Lens</p>
+                                    <p>$ 1,798.00</p>
+                                    <p>NEW ARRIVAL</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <div class="item">
+                            <div class="card Customcard">
+                                <img src="images/eighteen.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-regular fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <p class="card-text text-primary">Sony Alpha a6700 Mirrorless Camera with E 18-135mm
+                                        f/3.5-5.6
+                                        OSS Lens</p>
+                                    <p>$ 1,798.00</p>
+                                    <p>NEW ARRIVAL</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <div class="item">
+                            <div class="card Customcard">
+                                <img src="images/twenty.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-regular fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-regular fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <p class="card-text text-primary">Sony Alpha a6700 Mirrorless Camera with E 18-135mm
+                                        f/3.5-5.6
+                                        OSS Lens</p>
+                                    <p>$ 1,798.00</p>
+                                    <p>NEW ARRIVAL</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <div class="item ">
+                            <div class="card Customcard">
+                                <img src="images/twenty-one.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <p class="card-text text-primary">Sony Alpha a6700 Mirrorless Camera with E 18-135mm
+                                        f/3.5-5.6
+                                        OSS Lens</p>
+                                    <p>$ 1,798.00</p>
+                                    <p>NEW ARRIVAL</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <div class="item">
+                            <div class="card Customcard">
+                                <img src="images/twenty-two.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <p class="card-text text-primary">Sony Alpha a6700 Mirrorless Camera with E 18-135mm
+                                        f/3.5-5.6
+                                        OSS Lens</p>
+                                    <p>$ 1,798.00</p>
+                                    <p>NEW ARRIVAL</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3">
+                        <div class="item">
+                            <div class="card Customcard">
+                                <img src="images/twenty-four.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-solid fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <i class="fa-regular fa-star fa-sm" style="color: #0ec601;"></i>
+                                    <p class="card-text text-primary">Sony Alpha a6700 Mirrorless Camera with E 18-135mm
+                                        f/3.5-5.6
+                                        OSS Lens</p>
+                                    <p>$ 1,798.00</p>
+                                    <p>NEW ARRIVAL</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="containe-fluid">
+            <div class="container">
+                <nav aria-label="...">
+                    <ul class="pagination d-flex justify-content-end">
+                        <li class="page-item disabled">
+                            <a class="page-link">Previous</a>
+                        </li>
+                        <li class="page-item " aria-current="page">
+                            <a class="page-link" href="cameralenses.html">1</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="cameralenses2.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="cameralenses3.html">3</a></li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- place footer here -->
+        <div class="container-fluid bg-dark">
+            <div class="container">
+                <footer class="py-5">
+                    <div class="row">
+                        <div class="col-6 col-md-2 mb-3">
+                            <h5 class="text-red">Section</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Home</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Features</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Pricing</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">FAQs</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">About</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-md-2 mb-3">
+                            <h5 class="text-red">Section</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Home</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Features</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Pricing</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">FAQs</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">About</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-md-2 mb-3">
+                            <h5 class="text-red">Section</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Home</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Features</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Pricing</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">FAQs</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">About</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-5 offset-md-1 mb-3">
+                            <form>
+                                <h5 class="text-red">Subscribe to our newsletter</h5>
+                                <p class="text-white">Monthly digest of what's new and exciting from us.</p>
+                                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                                    <input id="newsletter1" type="text" class="form-control"
+                                        placeholder="Email address">
+                                    <button class="btn btn-danger" type="button">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-sm-row justify-content-between py-4  border-top">
+                        <p class="text-white">&copy; 2023 Company, Inc. All rights reserved.</p>
+                        <ul class="list-unstyled d-flex">
+                            <a class="icon-link" href="https://twitter.com/?lang=en">
+                                <li class="ms-3"><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i></li>
+                            </a>
+                            <a class="icon-link" href="https://www.instagram.com/">
+                                <li class="ms-3"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i>
+                                </li>
+                            </a>
+                            <a class="icon-link" href="https://www.facebook.com/">
+                                <li class="ms-3"><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i>
+                                </li>
+                            </a>
+                        </ul>
+
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script>
+        function changeTheme() {
+            document.body.classList.toggle("dark");
+        }
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            // Initial state
+            var scroll_start = 0;
+            var startchange = $('#navbar');
+            var offset = startchange.offset();
+
+            if (startchange.length) {
+                $(document).scroll(function () {
+                    scroll_start = $(this).scrollTop();
+                    if (scroll_start > offset.top) {
+                        $('#navbar').addClass('navbar-scrolled');
+                    } else {
+                        $('#navbar').removeClass('navbar-scrolled');
+                    }
+                });
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
